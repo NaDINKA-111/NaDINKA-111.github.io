@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Свойство display</title>
+	<style>
+		#elem1, #elem2, #elem3, #elem4 {
+			color: white:;
+			font-size: 3rem;
+			text-align: center;
+		}
+		#elem1 {
+			background: springgreen;
+			width: 60px;
+			height: 100px;
+		}
+		#elem2 {
+			background: gold;
+			width: 100px;
+			height: 60px;
+		}
+		#elem3 {
+			background: crimson;
+			width: 100px;
+			height: 100px;
+		}
+		#elem4 {
+			background: steelblue;
+			width: 150px;
+			height: 100px;
+		}
+		#container {
+			background: lavender;
+			margin-bottom: 50px;
+			display:flex;
+			flex-direction: column-reverse;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="margin.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
+		</a>
+		<h1>Свойство display</h1>
+		<a href="DzTablicsi.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка">
+		</a>
+	</header>
+	<main>
+		<h2>Значение none</h2>
+		<div style="border: 2px solid black">
+			Невидимый div(
+			<div style="display: none">Я - невидимка!</div>
+			) стоит внутри скобок!
+		</div>
+
+		<h2>Значение block</h2>
+		<ul>
+			<li>Блочные элементы располагаются один на другим, вертикально (если нет особых свойств позиционирования)</li>
+			<li>Блок стремится расшириться на всю доступную ширину. Можно указать ширину и высоту самостоятельно.</li>
+			<li>Это значение display многие элементы имеют по умолчанию: div, h1-h6, p.</li>
+		</ul>
+		<div style="border: 2px solid black">
+			<div style="border:1px solid red; width:50%">Первый</div>
+		<div style="border:1px solid green">Второй</div>
+	</div>
+
+		<h2>Значение inline</h2>
+		<ul>
+			<li>Элементы располагаются на той же строке, последовательно.</li>
+			<li>Ширина и высота элемента определяется по содержимому. Поменять их нельзя.</li>
+			<li>Инлайн элементы по умолчанию: span, a.</li>
+		</ul>
+		<span style="border: 2px solid black">
+			<div style="display:inline; border: 1px solid red; width:50%">Ширина</div>
+			<div style="display:inline; border: 1px solid green">игнорируется</div>
+		</span>
+
+		<h2>Значение inline-block</h2>
+		<h3>Как инлайн элемент:</h3>
+		<ul>
+			<li>Располагается в строке.</li>
+			<li>Размер устанавливается по содержимому.</li>
+		</ul>
+		<h3>Как блочный элемент:</h3>
+		<ul>
+			<li>Элемент всегда прямоугольный</li>
+			<li>Работают свойства width/height.</li>
+		</ul>
+
+		<h2>Значение flex</h2>
+		<div id = "container">
+			<div id="elem1">1</div>
+			<div id="elem2">2</div>
+			<div id="elem3">3</div>
+			<div id="elem4">4</div>
+		</div>
+
+		<h3>flex-direction - направление элементов внутри flex-контейнера.(column/row/column-reverse/row-reverse)</h3>
+		<h3>justify-content - выравнивание элементов по главному направлению</h3>
+		<img src="https://images-ext-2.discordapp.net/external/xO0oq08wqLk6CW_Wdpf_-ARba2D1JU6lTJ1j1UxKDd4/https/raw.githubusercontent.com/kompot-Vjacovich/CoddyWork/master/%25D0%2592%25D0%25BE%25D1%2581%25D0%25BA%25D1%2580%25D0%25B5%25D1%2581%25D0%25B5%25D0%25BD%25D1%258C%25D0%25B5%252012.00/web/justify-content.jpg" alt="">
+		<h3>align-items - выравнивание элементов по второстепенному направлению</h3>
+		<ol>
+			<li>flex-start</li>
+			<li>flex-end</li>
+			<li>center</li>
+			<li>stretch</li>
+			<li>baseline</li>
+		</ol>
+	</main>
+</body>
+</html>

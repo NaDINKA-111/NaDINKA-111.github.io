@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Единицы измерения в HTML и CSS</title>
+	<Link rel="stylesheet" href="style.css">
+	<style>
+		ol {
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+		<header>
+		<a href="margin.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
+		</a>
+		<h1>HTML</h1>
+		<a href="index.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка">
+		</a>
+	</header>
+	<main>
+		<h2>Исключения, в которых % берётся не от родителя</h2>
+		<ol style="font-size: 1em;">
+			<li>
+				<b>margin-left (margin-right и т.д.)</b>
+				<p>Процент берётся от ШИРИНЫ родительского блока, а не от его margin-left</p>
+			</li>
+			<li>
+				<b>line-height (высота строки)</b>
+				<p>Процент берётся от ТЕКУЩЕГО РАЗМЕРА ШРИФТА, а не от line-height родителя</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<p>При position: fixed; процент берётся от ширины/высоты окна, а не от ширины/высоты родителя</p>
+			</li>
+		</ol>
+
+		<h2>Единица измерения размера шрифта em</h2>
+		<div style="font-size: 10px">
+			Текущий размер шрифта
+			<div style="font-size: 1.6em">
+				Первый текст - размер шрифта = Текущий шрифт *1.6em = 10px*1.6 = 16px
+				<div style="font-size: 2em">
+					Второй текст - размер шрифта = 32px
+				</div>
+			</div>
+		</div>
+
+		<h2>Единицы измерения относительно экрана</h2>
+		<ul>
+			<li><b>vw</b> - 1% ширины окна</li>
+			<li><b>vh</b> - 1% высоты окна</li>
+			<li><b>vmin</b> - наименьшее из (vw,vh)</li>
+			<li><b>vmax</b> - наибольшее из (vw, vh)</li>
+		</ul>
+
+		<h2>Единица измерения rem:смесь  px и em</h2>
+		<ol>
+			<!-- 32px -->
+			<li>Ученье
+				<ol>
+					<!-- 64px -->
+					<li> - свет,
+						<ol>
+							<!-- 128px -->
+							<li> а неученье
+								<ol>
+									<!-- 256px -->
+									<li>- тьма</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+
+		<h1>Итого:</h1>
+		<ul>
+			<li><b>px</b>- фбсолютные пиксели, используются для максимально точного задания размеров</li>
+			<li><b>%</b>задаёт размер относительно такого же свойства родителя, кроме исключений (смотри выше)</li>
+			<li><b>em</b> - задаёт размер шрифта относительно размера шрифта родителя</li>
+			<li><b>rem</b> - задаёт размер шрифта относительно размера шрифта тега html</li>
+			<li><b>vw, vh, wmin, vmax</b>- относительно размера экрана</li>
+		</ul>
+	</main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Поля и отступы</title>
+	<style>
+		img {
+			width: 100%;
+		}
+		#test1 {
+			width: 500px;
+			height: 200px;
+			background: #ADFF2F;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			border: 5px solid firebrick;
+			padding-left: 50px;
+			padding-top: 30px
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="border.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
+		</a>
+		<h1>Поля и отступы</h1>
+		<a href="display.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка"></a>
+	</header>
+	<main>
+		<img src="https://images-ext-2.discordapp.net/external/Xyf6KOPEL_J5fx1nmn6F6-L8YLm3nn8Ddtfry45FJuA/http/html-plus.in.ua/wp-content/uploads/2017/04/box-model.jpg?width=896&height=671" alt="Отступы">
+
+		<div id="test1">Какой-то текст внутри блока</div>
+		<h2>Сокращённая запись margin и padding</h2>
+		<ul>
+			<li><b>4 значения:</b> задаются отступы для всех сторон в таком порядке: сверху, справа,снизу, слева. <i>Пример:</i> padding: 3px 5px 2px 7px;</li>
+			<li><b>3 значения:</b> задаётся размер сначала для верхней стороны,потом одновременно для левой и правой,а затем - для нижней. <i>Пример:</i> margin: 10px auto 5px;</li>
+			<li><b>2 значения:</b> задаются сначала отступы одновременно для верхней и нижней стороны, а потом - одновременно для левой и правой. <i>Пример:</i></li> padding: 10px 20px;
+			<li><b>1 значение</b>задаются одинаковые отступы для всех сторон. <i>Пример:</i> margin: 100px;</li>
+		</ul>
+	</main>
+</body>
+</html>

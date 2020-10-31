@@ -1,0 +1,45 @@
+td {
+	border: 1px solid #EE82EE;
+	background: #DC143C ;
+	/*выравнивание текста по центру*/
+	text-align: center;
+}
+th{
+	border: 1px solid yellow;
+	/*Цвет фона*/
+	background:#A52A2A;
+	color: #FFFF00;
+}
+header {
+	/*Ширина*/
+	width: 80%;
+	background: #A52A2A;
+	/*Высота*/
+	height: 70px;
+	/*Внешние отступы*/
+	margin: auto;
+	/*Текст по центру*/
+	text-align:center;
+	/*Способ отображения элементов внутри этого тега*/
+	display: flex;
+	/*Распределение элементов внутри*/
+	justify-content: space-around;
+	/*Выравнивание элементов по вертикали*/
+	align-items :middle;
+}
+body {
+	background:#FFFF00;
+	margin: 0;
+}
+#left {
+	/*Поворот стрелки*/
+	transform: rotate(180deg);
+	width:64px;
+}
+#right {
+	width: 64px;
+}
+main {
+ width: 80%;
+ margin: auto;
+}
