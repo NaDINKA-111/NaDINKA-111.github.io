@@ -1,0 +1,17 @@
+html{
+	font-size: 20px;
+	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Inconsolata', monospace;
+}
+
+.logo{
+	font-size: 2.6rem;
+	/*Толщины фрифта*/
+	font-weight: bold;
+	width: 300px;
+}
+
+.nav-container{
+	display: flex;
+	justify-content: space-between;
+}
