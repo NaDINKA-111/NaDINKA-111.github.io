@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Свойство position</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#container {
+			width: 80%;
+			margin: auto;
+		}
+		#header, #footer {
+			width: 100%;
+			background-color: indigo;
+			color: white;
+		}
+		#content {
+			width: 100%;
+			background-color: sandybrown;
+			position: relative;
+		}
+		#div1 {
+			margin: 0 25px;
+			height: 30px;
+			background-color: lightseagreen;
+			position: static;
+		}
+		#div2 {
+			margin: 0 25px;
+			height: 50px;
+			background-color: firebrick;
+
+			position: relative;
+			left: 100px;
+		}
+		#div3 {
+			margin: 0 25px;
+			height: 35px;
+			background-color: orangered;
+			/*Абсолютное позиционирование*/
+			position: absolute;
+			right: 200px;
+		}
+		#div4 {
+			margin: 0 25px;
+			height: 55px;
+			background-color: lemonchiffon;
+			
+		}
+		#div2 {
+			margin: 0 25px;
+			height: 40px;
+			background-color:teal;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="DzTablicsi.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
+		</a>
+		<h1>Свойство Position</h1>
+		<a href="flags.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка">
+		</a>
+	</header>
+	<main>
+		<div id="container">
+			<div id="header">id="header"</div>
+			<div id="content">id="content"
+				<div id="div1">id="div1</div>
+				<div id="div2">id="div2</div>
+				<div id="div3">id="div3</div>
+				<div id="div4">id="div4</div>
+				<div id="div5">id="div5</div>
+			</div>
+			<div id="footer">id="footer"</div>
+
+			<h1>Итого:</h1>
+
+			<h2>static</h2>
+			<p>Иначе называется "без позиционирования"</p>
+			<h2>relative</h2>
+			<p>Сдвигает элемент относительно текущего места</p>
+			<ul>
+				<li>Противоположные границы left/right(top/bottom) одновременно указать нельзя.</li>
+				<li>Окружающие элементф ведут себя так, будто элемент никуда не сдвигался.</li>
+			</ul>
+
+			<h2>absolute</h2>
+			<p>Визуально переносит элемент на новое место. <br> Новое место вычисляется по координатам left/top/right/bottom относительно ближайшего позиционированного родителя. Если такого родителя нет, то им считается окно.</p>
+			<ul>
+				<li>
+					Ширина элемента по умолчанию устанавливается по содержимому.
+				</li>
+				<li>
+					Можно указать одновременно противоположные границы left/right(bottom/top). Элемент при этом растянется.
+				</li>
+				<li>Окружающие элементы заполняют освободившееся место.</li>
+			</ul>
+
+			<h2>fixed</h2>
+			<p>Подвиг абсолютного позиционирования, при котором элемент привязывается к координатам окна,а не документа. При прокрутке остаётся на том же месте.</p>
+	</main>
+	</body>
+</html>
