@@ -7,49 +7,57 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Обводка</title>
 	<style>
-
-	#rectangle {
-    width: 220px;
-    height: 120px;
-    background: yellow;
-	}
-	.radius {
-    background: yellow; 
-    border: 2px solid black;
-    padding: 40px;
-    margin-bottom: 40px;
-    height: 40px;
-    margin-left: 500px;
-    margin-right: 420px;
-	}
-	.circle{
- width:50px;
- height:50px;
- display:block;
- border-radius:10px;
- -moz-border-radius:30px;
- -webkit-border-radius:40px;
- -html-border-radius:10px;
- font-size:10px; color:green;
- line-height:10px;
- text-align:center;
- background:green
- 
- }
+		#box{
+			width: 1000px;
+			margin: auto;
+			border: black 3px solid;
+		}
+		#line1, #line2, #line3 {
+			height: 200px;
+			display: flex;
+		}
+		#line1, #line3{
+			justify-content: space-between;
+		}
+		#line2 {
+			justify-content: center;
+		}
+		.circle1 {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: red;	
+		}
+		.circle2 {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: orange;	
+		}
+		.circle3 {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: blue;	
+		}
 	</style>
 </head>
 <body>
-
 	<header>
 	<a href="flags.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
 		</a>
-		<h1>Обводка</h1>
-		<a href=""><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка">
-		</a>
+		<h1>Obvodka</h1>
+		<a href=""><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка"></a>
 	</header>
-			<div id="rectangle"></div>
- 	<div style="border-radius: 40px 10 10 40px;" class="radius">
- 		<div class="circle"></div>
-  </div>
-	</body>
+		<div id="box">
+		<div id="line1">
+			<div class="circle1"></div>
+			<div class="circle1"></div></div>
+			<div id="line2">
+			<div class="circle2"></div></div>
+				<div id="line3">
+			<div class="circle3"></div>
+			<div class="circle3"></div></div>
+		</div>
+</body>
 </html>
