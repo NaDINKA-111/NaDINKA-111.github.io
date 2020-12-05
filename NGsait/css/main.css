@@ -125,3 +125,46 @@ html{
 	width: 24px;
 	color: yellow;
 }
+
+.first{
+	text-align: center;
+	padding: 70px 0;
+}
+
+h2 {
+	font-size: 3rem;
+	letter-spacing: 0.5px;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+text {
+	font-size: 1.2rem;
+	letter-spacing: 0.3px;
+	max-width: 700px;
+	margin: auto;
+	font-weight: 300;
+}
+h3{
+	font-size: 1.8rem;
+	margin: 1.5rem 0;
+	letter-spacing: 0.2px;
+}
+.first-box{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 100px;
+
+}
+.first-item{
+	width: 30%;
+}
+.icon {
+	display: block;
+	margin: auto;
+	width: 80px;
+}
+.second {
+	background-color: #FAFAD2;
+}
