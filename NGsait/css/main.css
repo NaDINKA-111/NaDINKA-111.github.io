@@ -179,3 +179,9 @@ h3{
 	margin: 1%;
 	padding: 6% 2%;
 }
+.readmore {
+	background-color: transparent;
+	border: 2px solid black;
+	color: black;
+	width: 100%;
+}
