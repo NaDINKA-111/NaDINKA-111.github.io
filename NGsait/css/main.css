@@ -168,3 +168,14 @@ h3{
 .second {
 	background-color: #FAFAD2;
 }
+.second-box {
+	max-width: 1000px;
+	flex-wrap: wrap;
+}
+
+.secon-item {
+	width: 30%;
+	background-color: white;
+	margin: 1%;
+	padding: 6% 2%;
+}
