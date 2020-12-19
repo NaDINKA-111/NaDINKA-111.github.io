@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@media all and (max-width: 1920px) and (min-width: 1201px) {
+			.big {display:block;}
+			.middle {display: none;}
+
+		}
+
+	@media all and (max-width: 1200px) and (min-width: 769px) {
+			.big {display:none;}
+			.middle {display:block;}
+
+		}
+
+		@media all and (max-width: 768px) and (min-width: 321px) {
+			.big {display:none;}
+			.middle {display:block;}
+		}
+
+		@media all and (min-width: 1921px) {
+			.big {display:block;}
+			.middle {display: none;}
+
+		}
+
+		@media all and (max-width: 321px) {
+			.big {display:block;}
+			.middle {display: none;}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="middle">Ширина вашего экрана от 769px до 1200px</div>
+	<div class="big">Ширина вашего экрана от 1201px, до 1920px</div>
+	<div class="small">Ширина вашего экрана от 321px, до 768px</div>
+	<div class="max-width">Ширина вашего экрана от 321px</div>
+	<div class="min-width">Ширина вашего экрана до 1921px</div>
+</body>
+</html>
