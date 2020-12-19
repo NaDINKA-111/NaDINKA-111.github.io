@@ -1,0 +1,7 @@
+@media all and (min-width: 1150px) {
+	.first-btn:hover, .second-btn:hover {
+		background-color: #DC143C;
+		border-color: transparent;
+		color: white;
+	}
+}
