@@ -3,5 +3,30 @@
 		background-color: #DC143C;
 		border-color: transparent;
 		color: white;
+		transition: 0.3s ease-in;
+	}
+	.nav-link:hover {
+		background-color: black;
+		color: white;
+		transition: 0.3s ease-in;
+	}
+
+	.second-item:hover {
+		background-color: #FF6347;
+		color: white;
+		transform: scale(1.05);
+		box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+		transition: 0.3s ease-in;
+	}
+	.second-item:hover .readmore {
+		color: red;
+		border-color: red;
+		transition: 0.3 ease-in;
+		cursor: pointer;
+	}
+	.second-item:hover .icon {
+		fill: white;
+		transition: 0.3s ease-in;
 	}
 }
