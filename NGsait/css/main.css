@@ -225,3 +225,38 @@ h3{
 	width:25%;
 	cursor: pointer;
 }
+
+label[for="tab2"] {
+	margin-left: 20px;
+}
+
+label[for="tab3"] {
+	margin-left: 20px;
+}
+
+input[name="tabs"]:checked + label {
+	background-color: red;
+	color: white;
+}
+
+.content {
+	margin-top: 30px;
+	padding: 12px;
+	display: none;
+}
+
+#tab1:checked ~ #txt1,
+#tab2:checked ~ #txt2,
+#tab3:checked ~ #txt3 {display: block;}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.img {
+	width: 30%;
+	margin-top: 3%;
+}
