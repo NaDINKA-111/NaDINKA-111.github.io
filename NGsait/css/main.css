@@ -260,3 +260,25 @@ input[name="tabs"]:checked + label {
 	width: 30%;
 	margin-top: 3%;
 }
+
+/*Контакты*/
+.contact {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/free-video-853800.jpg);
+	background-repeat: no-repeat;
+	height: calc(100%-100px);
+	background-size:cover;
+	-webkit-background-size: cover;
+	color: white;
+}
+
+.contact-box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.contact-item > .icon {
+	fill:;
+}
