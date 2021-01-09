@@ -9,6 +9,7 @@
 
 html, body, header {
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 html{
@@ -272,8 +273,10 @@ input[name="tabs"]:checked + label {
 }
 
 .contact-box {
+	/*Отвечает за порядок иконок*/
 	display: flex;
 	justify-content: space-between;
+	/*Отвечает за отступ p от "Контакты"*/
 	max-width: 1000px;
 	margin: auto;
 	margin-top: 100px;
@@ -287,7 +290,7 @@ input[name="tabs"]:checked + label {
 	max-width: 1000px;
 	width: 70%;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .input {
@@ -331,4 +334,13 @@ input[name="tabs"]:checked + label {
 	float: right;
 	font-size: 1rem;
 	text-transform: uppercase;
+}
+
+.footer{
+	height: 40px;
+	font-size: 1.6rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
