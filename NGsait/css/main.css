@@ -99,14 +99,14 @@ html{
 }
 
 .box>h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	letter-spacing: 1px;
 }
 
 .box>p {
 	font-size: 1.5rem;
-	letter-spacing: 0.3rem;
-	padding: 2rem 0;
+	letter-spacing: 0.2rem;
+	padding: 1.5rem 0;
 }
 
 .header-btn, .readmore {
